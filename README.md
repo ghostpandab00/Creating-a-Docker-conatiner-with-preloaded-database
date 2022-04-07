@@ -12,8 +12,12 @@
 ## Scenario
 Consider the following scenario: we have a database dump that needs to be restored while the container is being built. After the container has been constructed, we may use 'source' to restore a database. But what if it's needed in the middle of the game?
 
+## Prerequisites
+ - Knowledge of Docker
+ - Docker installed
+
 ## Solution
-The usage of mounting makes it simple to restore a database dump. Here we have a dump of the database named "wpdb.sql" 
+The usage of mounting makes it simple to restore a database dump. Here we have a dump of the database named "wpdb.sql". It's a dump of one wordpress database.
 
 ```sh
 [ec2-user@ip-172-31-37-71 newsite]$ pwd
